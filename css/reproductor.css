@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+#musicPlayer {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+#scrollingText {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#songInfo {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#scrollingText {
+    border: 2px solid #333;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
